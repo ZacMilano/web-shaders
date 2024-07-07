@@ -1,20 +1,23 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import CanvasContainer from '../components/CanvasContainer.astro'
 ---
 
 <Layout title="Welcome to Astro.">
 	<main
-		class="m-auto p-4 w-[50rem] max-w-[calc(100%_-_2rem) text-white text-xl"
+		class="text-white text-xl grid grid-rows-2"
 	>
-		<h1
-			class="text-gradient text-6xl font-bold leading-none text-center mb-[1em]"
-		>
-			Web Shaders
-		</h1>
-
-		<p>
-			I'll start with some basic Three.js setup (scene with object & light).
-		</p>
+    <header class="m-auto p-4 w-[50rem] max-w-[calc(100%_-_2rem)"></header>
+      <h1
+        class="text-gradient text-6xl font-bold leading-none text-center mb-[1em]"
+      >
+        Web Shaders
+      </h1>
+      
+      <p>Here's Mushu on a square. Rotate him!</p>
+    </header>
+    
+    <CanvasContainer />
 	</main>
 </Layout>
 
